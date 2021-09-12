@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) ~/.local/bin/changelight ;;
+	3) notify-send "Backlight brightness module" "Shows backlight brightness percentage using \`light\`\n\-Left click to run \`changelight\`"
+esac
+
+brightness=$(light)
+brightness=$(printf "%.0f" $brightness)
+
+if [ $brightness -gt "80" ]; then
+	icon="🌞"
+elif [ $brightness -lt "50" ]; then
+	icon="🌇"
+else
+	icon="⛅"
+fi
+
+echo "$icon$brightness%"

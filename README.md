@@ -10,5 +10,4 @@ Then just add the line
 ```
 {"",	"sb-brightness",	0,	24},
 ```
-in your config.h, renew dwm and everything should work
-if you are using a differenct file structure the install script will not work, but you can figure things out yourself
+in your config.h, renew dwm and everything should work if you are using a different file structure the install script will not work, but you can figure things out yourself

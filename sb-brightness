@@ -3,6 +3,9 @@
 case $BLOCK_BUTTON in
 	1) ~/.local/bin/changelight ;;
 	3) notify-send "Backlight brightness module" "Shows backlight brightness percentage using \`light\`\n\-Left click to run \`changelight\`"
+	4) light -A 5; kill -58 "$(pidof dwmblocks)" ;;
+	5) light -U 5; kill -58 "$(pidof dwmblocks)" ;;
+
 esac
 
 brightness=$(light)

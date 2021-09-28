@@ -1,13 +1,13 @@
 # sb-brightness
 dwmblock that shows the current backlight brightness, and can be clicked to change the brightness with the included script
-## Requires `light`, can be installed with `yay`
+## Requires `light`, which can be installed with `yay`
 ## Installation:
 ```
-git clone https://github.com/mehbark/sb-brightness
-sh install.sh
+curl -s https://raw.githubusercontent.com/Mehbark/sb-brightness/main/install.sh | sh -s
 ```
 Then just add the line 
 ```
 {"",	"sb-brightness",	0,	24},
 ```
-in your config.h, renew dwm and everything should work if you are using a different file structure the install script will not work, but you can figure things out yourself
+in your config.h, recompile dwmblocks, renew dwm and everything should work.
+if you are using a different file structure the install script will not work, so figure things out yourself
